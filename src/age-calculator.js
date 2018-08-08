@@ -1,7 +1,7 @@
 export class Calculator {
-  constructor(birthdate, lifeExpectancy) {
+  constructor(birthday = new Date(), lifeExpectancy) {
 
-    this.birthdate = birthdate;
+    this.birthday = birthday;
     this.lifeExpectancy = lifeExpectancy;
   }
 }

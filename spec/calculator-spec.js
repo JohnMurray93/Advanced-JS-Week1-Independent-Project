@@ -4,11 +4,11 @@ describe('Calculator', function() {
   var reusableCalculator;
 
   beforeEach(function() {
-    reusableCalculator = new Calculator(1993, 135);
+    reusableCalculator = new Calculator((2013, 1, 1), 95);
   });
   
   it('should test that the Calculator constructor works', function() {
-    expect(reusableCalculator.birthday).toEqual(1993);
-    expect(reusableCalculator.lifeExpectancy).toEqual(135);
+    expect(reusableCalculator.birthday).toEqual((2013, 1, 1));
+    expect(reusableCalculator.lifeExpectancy).toEqual(95);
   });
 });
