@@ -11,6 +11,12 @@ export class AgeCalculator {
 
   ageInSeconds() {
     let date = new Date(this.birthday);
-    date.getTime() / 1000;
+    return date.getTime() / 1000;
   }
+}
+
+export function dateDifference(date1, date2) 
+{
+  var difference =(date1.getTime() - date2.getTime()) / 1000;
+  return Math.abs(Math.round(difference));
 }
