@@ -1,5 +1,5 @@
-// import { Script } from './script.js';
+// // import { Calculator } from './age-calculator.js';
 import './styles.css';
-// import $ from 'jquery';
-import '../../../Library/Caches/typescript/2.9/node_modules/@types/bootstrap';
+// // import $ from 'jquery';
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';

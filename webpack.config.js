@@ -1,7 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('../../Library/Caches/typescript/2.9/node_modules/@types/html-webpack-plugin');
-const CleanWebpackPlugin = require('../../Library/Caches/typescript/2.9/node_modules/@types/clean-webpack-plugin');
-const UglifyJsPlugin = require('../../Library/Caches/typescript/2.9/node_modules/@types/uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -31,16 +31,13 @@ module.exports = {
           'css-loader'
         ]
       },
-      {                         
+      {
         test: /\.js$/,
         exclude: [
           /node_modules/,
           /spec/
         ],
-        loader: "babel-loader",
-        options: {
-          presets: ['es2015']
-        }
+        loader: "eslint-loader"
       }
     ]
   }
