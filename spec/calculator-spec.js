@@ -69,4 +69,9 @@ describe('AgeCalculator', function() {
     expect(reusableAgeCalculator.yearsLeftOnMars()).not.toBe("");
     expect(reusableAgeCalculator.yearsLeftOnMars ()).toBeCloseTo(58.511);
   })
+
+  it('should return the users remaining years to live on Jupiter', function(){
+    expect(reusableAgeCalculator.yearsLeftOnJupiter()).not.toBe("");
+    expect(reusableAgeCalculator.yearsLeftOnJupiter ()).toBeCloseTo(9.275);
+  })
 });
