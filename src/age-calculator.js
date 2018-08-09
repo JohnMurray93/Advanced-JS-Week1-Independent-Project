@@ -17,6 +17,10 @@ export class AgeCalculator {
   ageOnMercury() {
     return getAge(this.birthday) / .24;
   }
+
+  ageOnVenus() {
+    return getAge(this.birthday) / .62;
+  }
 }
 
 export function dateDifferenceInSeconds(date1, date2) {
