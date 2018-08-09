@@ -25,6 +25,10 @@ export class AgeCalculator {
   ageOnMars() {
     return getAge(this.birthday) / 1.88;
   }
+
+  ageOnJupiter() {
+    return getAge(this.birthday) / 11.86;
+  }
 }
 
 export function dateDifferenceInSeconds(date1, date2) {
