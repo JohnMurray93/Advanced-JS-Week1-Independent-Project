@@ -54,4 +54,9 @@ describe('AgeCalculator', function() {
     expect(reusableAgeCalculator.ageOnJupiter()).not.toBe("");
     expect(reusableAgeCalculator.ageOnJupiter()).toBeCloseTo(2.108);
   });
+
+  it('should return the users remaining years to live on Mercury', function(){
+    expect(reusableAgeCalculator.yearsLeftOnMercury()).not.toBe("");
+    expect(reusableAgeCalculator.yearsLeftOnMercury()).toBeCloseTo(458.333);
+  })
 });
