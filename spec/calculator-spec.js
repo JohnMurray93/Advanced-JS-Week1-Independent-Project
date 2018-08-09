@@ -48,4 +48,10 @@ describe('AgeCalculator', function() {
     expect(reusableAgeCalculator.ageOnMars()).not.toBe("");
     expect(reusableAgeCalculator.ageOnMars()).toBeCloseTo(13.298);
   });
+
+
+  it('should return the users age on Jupiter', function(){
+    expect(reusableAgeCalculator.ageOnJupiter()).not.toBe("");
+    expect(reusableAgeCalculator.ageOnJupiter()).toBeCloseTo(2.108);
+  });
 });
