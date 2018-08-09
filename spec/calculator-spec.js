@@ -59,4 +59,9 @@ describe('AgeCalculator', function() {
     expect(reusableAgeCalculator.yearsLeftOnMercury()).not.toBe("");
     expect(reusableAgeCalculator.yearsLeftOnMercury()).toBeCloseTo(458.333);
   })
+
+  it('should return the users remaining years to live on Venus', function(){
+    expect(reusableAgeCalculator.yearsLeftOnVenus()).not.toBe("");
+    expect(reusableAgeCalculator.yearsLeftOnVenus ()).toBeCloseTo(177.419);
+  })
 });
