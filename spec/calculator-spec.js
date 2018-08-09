@@ -43,4 +43,9 @@ describe('AgeCalculator', function() {
     expect(reusableAgeCalculator.ageOnVenus()).not.toBe("");
     expect(reusableAgeCalculator.ageOnVenus()).toBeCloseTo(40.323);
   });
+
+  it('should return the users age on Mars', function(){
+    expect(reusableAgeCalculator.ageOnMars()).not.toBe("");
+    expect(reusableAgeCalculator.ageOnMars()).toBeCloseTo(13.298);
+  });
 });
