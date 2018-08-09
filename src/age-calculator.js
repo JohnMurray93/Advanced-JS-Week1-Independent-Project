@@ -37,6 +37,10 @@ export class AgeCalculator {
   yearsLeftOnVenus() {
     return (this.lifeExpectancy - this.ageInYears) / .62;
   }
+
+  yearsLeftOnMars() {
+    return (this.lifeExpectancy - this.ageInYears) / 1.88;
+  }
 }
 
 export function dateDifferenceInSeconds(date1, date2) {
