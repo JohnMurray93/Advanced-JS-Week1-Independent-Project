@@ -29,6 +29,14 @@ export class AgeCalculator {
   ageOnJupiter() {
     return getAge(this.birthday) / 11.86;
   }
+
+  yearsLeftOnMercury() {
+    return (this.lifeExpectancy - this.ageInYears) / .24;
+  }
+
+  yearsLeftOnVenus() {
+    return (this.lifeExpectancy - this.ageInYears) / .62;
+  }
 }
 
 export function dateDifferenceInSeconds(date1, date2) {
