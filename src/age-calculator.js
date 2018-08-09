@@ -45,6 +45,14 @@ export class AgeCalculator {
   yearsLeftOnJupiter() {
     return (this.lifeExpectancy - this.ageInYears) / 11.86;
   }
+
+  pastLifeExpectancy() {
+    if ((this.lifeExpectancy - this.ageInYears) < 0) {
+      return this.ageInYears - this.lifeExpectancy;
+    } else {
+      return false;
+    }
+  }
 }
 
 export function dateDifferenceInSeconds(date1, date2) {

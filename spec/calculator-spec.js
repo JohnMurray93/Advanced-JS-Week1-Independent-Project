@@ -77,6 +77,6 @@ describe('AgeCalculator', function() {
 
   it('should return difference in years between life expectancy and age if the users age exceeds their life expectancy', function(){
     expect(reusableAgeCalculator.pastLifeExpectancy()).not.toBe("");
-    expect(reusableAgeCalculator.pastLifeExpectancy()).toBe();
+    expect(reusableAgeCalculator.pastLifeExpectancy()).toBe(false);
   })
 });
