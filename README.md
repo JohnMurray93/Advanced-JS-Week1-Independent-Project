@@ -16,11 +16,11 @@ _A solar year lasts 365 days on planet Earth. However, the length of a solar yea
 - If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
 
 ### Setup/Installation Requirements
-
+- _'npm install'_
 #### Run Application
-
+- _'npm run start'_
 #### Test Application
-
+- _'npm run test'_
 ### Technologies Used
 
 - _JavaScript_
